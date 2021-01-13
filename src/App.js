@@ -1,11 +1,34 @@
 import React from "react";
-import "./styles.css";
+import { Radio } from "playbook-ui"
+
+import "playbook-ui/dist/playbook.css"
+import "playbook-ui/dist/fonts/regular-min"
+import "playbook-ui/dist/fonts/fontawesome-min"
+
 
 export default function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <Radio
+          defaultChecked
+          label="Power"
+          name="Group2"
+          value="Power"
+      />
+      <br />
+      <Radio
+          defaultChecked={false}
+          label="Nitro"
+          name="Group2"
+          value="Nitro"
+      />
+      <br />
+      <Radio
+          defaultChecked={false}
+          label="Google"
+          name="Group2"
+          value="Google"
+      />
     </div>
   );
 }

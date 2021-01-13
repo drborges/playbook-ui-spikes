@@ -5,6 +5,8 @@ import "playbook-ui/dist/playbook.css"
 import "playbook-ui/dist/fonts/regular-min"
 import "playbook-ui/dist/fonts/fontawesome-min"
 
+import "./radio-css-fix.scss"
+
 
 export default function App() {
   return (
